@@ -153,15 +153,18 @@ void createSession() {
 void showMenu();
 
 void showMenu() {
- cout << "\n===== Digital Attendance System =====\n";
+ {
+     cout << "\n===== Digital Attendance System =====\n";
 cout << "1. Add Student\n";
 cout << "2. View Students\n";
 cout << "3. Search Student\n";
 cout << "4. Create Attendance Session\n";
-cout << "5. Save Students\n";
-cout << "6. Exit\n";
-cout << "Enter switch(choice) {
-            case 1: addStudent(); break;
+cout << "5. Mark Attendance\n";
+cout << "6. Save Students\n";
+cout << "7. Exit\n";
+cout << "Enter choice: ";
+   
+    case 1: addStudent(); break;
             case 2: viewStudents(); break;
             case 3: markStudentAttendance(); break;
             case 4: cout << "Exiting..."; break;
