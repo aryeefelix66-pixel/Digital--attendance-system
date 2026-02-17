@@ -120,9 +120,16 @@ cout << "3. Search Student\n";
 cout << "4. Create Attendance Session\n";
 cout << "5. Save Students\n";
 cout << "6. Exit\n";
-cout << "Enter choice: ";
-   
-}
+cout << "Enter switch(choice) {
+            case 1: addStudent(); break;
+            case 2: viewStudents(); break;
+            case 3: markStudentAttendance(); break;
+            case 4: cout << "Exiting..."; break;
+
+            default:
+    cout << "Invalid choice!" << endl;
+    break;
+        }
 
 
 
@@ -136,16 +143,7 @@ int main() {
         cin >> choice;
         cin.ignore();
 
-        switch(choice) {
-            case 1: addStudent(); break;
-            case 2: viewStudents(); break;
-            case 3: markStudentAttendance(); break;
-            case 4: cout << "Exiting..."; break;
-
-            default:
-    cout << "Invalid choice!" << endl;
-    break;
-        }
+        
 
     } while (choice != 4);
 
