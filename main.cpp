@@ -73,6 +73,36 @@ void viewStudents() {
         cout << "No students available." << endl;
         return;
     }
+void createSession() {
+    string courseCode, date, startTime;
+    int duration;
+
+    cout << "Enter course code: ";
+    cin >> courseCode;
+
+    cout << "Enter date (YYYY-MM-DD): ";
+    cin >> date;
+
+    cout << "Enter start time: ";
+    cin >> startTime;
+
+    cout << "Enter duration (minutes): ";
+    cin >> duration;
+
+    // Create file name
+    string fileName = "session_" + courseCode + "_" + date + ".txt";
+
+    ofstream file(fileName);
+
+    file << "Course Code: " << courseCode << endl;
+    file << "Date: " << date << endl;
+    file << "Start Time: " << startTime << endl;
+    file << "Duration: " << duration << " minutes" << endl;
+
+    file.close();
+
+    cout << "Session created and saved successfully!\n";
+}
 
     for (int i = 0; i < students.size(); i++) {
         cout << "Name: " << students[i].name
