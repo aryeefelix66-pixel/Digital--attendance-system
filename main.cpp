@@ -28,6 +28,21 @@ public:
 
 
 vector<Student> students;
+void markStudentAttendance() {
+    string index;
+    cout << "Enter index number to mark attendance: ";
+    cin >> index;
+
+    for (int i = 0; i < students.size(); i++) {
+        if (students[i].indexNumber == index) {
+            students[i].markAttendance();
+            cout << "Attendance marked successfully!" << endl;
+            return;
+        }
+    }
+
+    cout << "Student not found!" << endl;
+}
 
 void addStudent();
 void viewStudents();
