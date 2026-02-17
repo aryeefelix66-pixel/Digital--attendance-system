@@ -12,7 +12,8 @@ public:
     Student(string n, string i) {
         name = n;
         indexNumber = i;
-        attendanceCount = 0;
+       attendanceStatus = "Not Marked";
+
     }
 };
 // ================= ATTENDANCE SESSION CLASS =================
