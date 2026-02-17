@@ -78,6 +78,44 @@ void viewStudents() {
 void createSession() {
     string courseCode, date, startTime;
     int duration;
+}
+    void markAttendance() {
+    string index;
+    cout << "Enter student index number: ";
+    cin >> index;
+
+    for (int i = 0; i < students.size(); i++) {
+
+        if (students[i].indexNumber == index) {
+
+            int option;
+            cout << "1. Present\n";
+            cout << "2. Absent\n";
+            cout << "3. Late\n";
+            cout << "Select attendance status: ";
+            cin >> option;
+
+            if (option == 1) {
+                students[i].attendanceStatus = "Present";
+            }
+            else if (option == 2) {
+                students[i].attendanceStatus = "Absent";
+            }
+            else if (option == 3) {
+                students[i].attendanceStatus = "Late";
+            }
+            else {
+                cout << "Invalid option\n";
+                return;
+            }
+
+            cout << "Attendance marked successfully!\n";
+            return;
+        }
+    }
+
+    cout << "Student not found.\n";
+}
 
     cout << "Enter course code: ";
     cin >> courseCode;
