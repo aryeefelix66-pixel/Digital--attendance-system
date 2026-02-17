@@ -21,7 +21,7 @@ public:
 
 
 
-    void markAttendance() {
+    
         attendanceCount++;
     }
 };
@@ -57,7 +57,7 @@ void showMenu() {
     cout << "Enter your choice: ";
 }
 
-int main() {
+
 
 
 int main() {
@@ -73,6 +73,8 @@ int main() {
             case 1: addStudent(); break;
             case 2: viewStudents(); break;
             case 3: markStudentAttendance(); break;
-case 4: cout << "Exiting..."; break;
+            case 4: cout << "Exiting..."; break;
 
-            default: cout << "Invalid choice
+            default:
+    cout << "Invalid choice!" << endl;
+    break;
