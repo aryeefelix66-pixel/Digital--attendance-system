@@ -200,19 +200,43 @@ cout << "8. Exit\n";
 cout << "Enter choice: ";
 
   switch(choice) {
-    case 1: addStudent(); break;
-    case 2: viewStudents(); break;
-    case 3: searchStudent(); break;
-    case 4: createSession(); break;
-    case 5: markAttendance(); break;
-    case 6: saveStudents(); break;
+    case 1:
+        addStudent();
+        break;
+
+    case 2:
+        viewStudents();
+        break;
+
+    case 3:
+        searchStudent();
+        break;
+
+    case 4:
+        createSession();
+        break;
+
+    case 5:
+        markAttendance();
+        break;
+
+    case 6:
+        attendanceSummary();
+        break;
+
     case 7:
+        saveStudents();
+        break;
+
+    case 8:
         saveStudents();
         cout << "Exiting...\n";
         break;
+
     default:
         cout << "Invalid choice\n";
 }
+
   
 
 
