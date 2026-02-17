@@ -144,8 +144,9 @@ int main() {
         cin.ignore();
 
         
+} while(choice != 6);
 
-    } while (choice != 4);
+
 
     return 0;
 }
