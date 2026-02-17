@@ -48,6 +48,18 @@ void addStudent();
 void viewStudents();
 void showMenu();
 
+void showMenu() {
+    cout << "\n===== Digital Attendance System =====" << endl;
+    cout << "1. Add Student" << endl;
+    cout << "2. View Students" << endl;
+    cout << "3. Mark Attendance" << endl;
+    cout << "4. Exit" << endl;
+    cout << "Enter your choice: ";
+}
+
+int main() {
+
+
 int main() {
 
     int choice;
@@ -60,5 +72,7 @@ int main() {
         switch(choice) {
             case 1: addStudent(); break;
             case 2: viewStudents(); break;
-            case 3: cout << "Exiting...\n"; break;
+            case 3: markStudentAttendance(); break;
+case 4: cout << "Exiting..."; break;
+
             default: cout << "Invalid choice
