@@ -72,9 +72,18 @@ void addStudent() {
 
 void viewStudents() {
     if (students.empty()) {
-        cout << "No students available." << endl;
+        cout << "No students registered.\n";
         return;
     }
+
+    for (int i = 0; i < students.size(); i++) {
+        cout << "Name: " << students[i].name
+             << ", Index: " << students[i].indexNumber
+             << ", Status: " << students[i].attendanceStatus
+             << endl;
+    }
+}
+
 void createSession() {
     string courseCode, date, startTime;
     int duration;
