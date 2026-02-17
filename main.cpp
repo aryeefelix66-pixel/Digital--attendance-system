@@ -251,7 +251,8 @@ int main() {
         cin.ignore();
 
         
-} while(choice != 7);
+ } while(choice != 8);
+
 
 
 
