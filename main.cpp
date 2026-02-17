@@ -7,12 +7,19 @@ class Student {
 public:
     string name;
     string indexNumber;
+    int attendanceCount;
 
     Student(string n, string i) {
         name = n;
         indexNumber = i;
+        attendanceCount = 0;
+    }
+
+    void markAttendance() {
+        attendanceCount++;
     }
 };
+
 
 vector<Student> students;
 
