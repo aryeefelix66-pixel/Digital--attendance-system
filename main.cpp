@@ -13,6 +13,23 @@ public:
         indexNumber = i;
         attendanceCount = 0;
     }
+};
+// ================= ATTENDANCE SESSION CLASS =================
+class AttendanceSession {
+public:
+    string courseCode;
+    string date;
+    string startTime;
+    int duration;
+
+    AttendanceSession(string c, string d, string s, int dur) {
+        courseCode = c;
+        date = d;
+        startTime = s;
+        duration = dur;
+    }
+};
+
 
     void markAttendance() {
         attendanceCount++;
