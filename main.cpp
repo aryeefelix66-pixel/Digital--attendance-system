@@ -40,6 +40,30 @@ public:
 
 
 vector<Student> students;
+void attendanceSummary() {
+    int present = 0;
+    int absent = 0;
+    int late = 0;
+
+    for (int i = 0; i < students.size(); i++) {
+
+        if (students[i].attendanceStatus == "Present") {
+            present++;
+        }
+        else if (students[i].attendanceStatus == "Absent") {
+            absent++;
+        }
+        else if (students[i].attendanceStatus == "Late") {
+            late++;
+        }
+    }
+
+    cout << "\n===== Attendance Summary =====\n";
+    cout << "Present: " << present << endl;
+    cout << "Absent: " << absent << endl;
+    cout << "Late: " << late << endl;
+}
+
 void markStudentAttendance() {
     string index;
     cout << "Enter index number to mark attendance: ";
