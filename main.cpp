@@ -187,16 +187,18 @@ void showMenu();
 
 void showMenu() {
  {
-     cout << "\n===== Digital Attendance System =====\n";
+   
+   cout << "\n===== Digital Attendance System =====\n";
 cout << "1. Add Student\n";
 cout << "2. View Students\n";
 cout << "3. Search Student\n";
 cout << "4. Create Attendance Session\n";
 cout << "5. Mark Attendance\n";
-cout << "6. Save Students\n";
-cout << "7. Exit\n";
+cout << "6. Attendance Summary\n";
+cout << "7. Save Students\n";
+cout << "8. Exit\n";
 cout << "Enter choice: ";
-   
+
   switch(choice) {
     case 1: addStudent(); break;
     case 2: viewStudents(); break;
