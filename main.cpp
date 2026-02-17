@@ -2,7 +2,6 @@
 #include <vector>
 
 using namespace std;
-
 class Student {
 public:
     string name;
@@ -14,6 +13,13 @@ public:
         indexNumber = i;
         attendanceCount = 0;
     }
+
+    void markAttendance() {
+        attendanceCount++;
+    }
+};
+
+
 
     void markAttendance() {
         attendanceCount++;
