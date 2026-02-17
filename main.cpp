@@ -6,7 +6,8 @@ class Student {
 public:
     string name;
     string indexNumber;
-    int attendanceCount;
+    string attendanceStatus;
+
 
     Student(string n, string i) {
         name = n;
