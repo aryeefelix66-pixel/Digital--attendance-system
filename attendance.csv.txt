@@ -1,0 +1,4 @@
+StudentID,Name,Date,Status
+001,Felix,01-03-2026,Present
+002,John,01-03-2026,Absent
+003,Ama,01-03-2026,Present
